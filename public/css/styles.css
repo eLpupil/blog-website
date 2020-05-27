@@ -33,3 +33,18 @@
 	font-size: 12px;
   color: #fff;
 }
+
+
+ /* COMPOSE PAGE */
+
+.compose-input {
+    width: 100%;
+}
+
+.btn {
+    margin-top: 20px;
+}
+
+label {
+    margin-top: 20px;
+}
