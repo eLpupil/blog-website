@@ -5,7 +5,15 @@
 
 <% posts.forEach(post => { %>
     <h1> <%= post.title %></h1>
-    <p> <%= post.body %> </p>
+<%  if (post.body.length > 100) { %>
+        <p> 
+            <%= post.body.slice(0, 100) + ' ...'; %> 
+            <a class="read-more" href="/posts/<%= post.title %>">read more</a>
+        </p>
+<%  } else { %>
+        <%= post.body %>
+<%  } %>
 <% }); %>
 <%- include('partials/footer') -%>
+
 
